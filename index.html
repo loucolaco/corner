@@ -159,14 +159,10 @@
         .map-container { width: 100%; height: 350px; overflow: hidden; background: #eee; border: 1px solid rgba(154, 160, 70, 0.2); }
         .map-container img { width: 100%; height: 100%; object-fit: cover; }
 
-        .mobile-cta-fixed { display: none; position: fixed; bottom: 0; left: 0; width: 100%; grid-template-columns: 1fr 1fr; z-index: 1001; background: var(--dark-petrol); border-top: 1px solid var(--olive-gold); }
-
         @media (max-width: 768px) {
             .about-grid, .menu-row, .menu-row.reverse, .events-grid { grid-template-columns: 1fr; }
             .menu-photo { height: 300px; order: -1; }
             .nav-links { display: none; }
-            .mobile-cta-fixed { display: grid; }
-            /* Correção aplicada aqui: margin auto para centralizar o grupo de botões */
             .btn-group { flex-direction: column; width: 80%; margin: 30px auto 0; }
             .dynamic-gallery { display: flex; flex-direction: column; gap: 20px; }
             .gallery-card { height: 300px !important; margin: 0 !important; animation: none !important; border: none !important; }
@@ -180,11 +176,6 @@
     </style>
 </head>
 <body>
-
-    <div class="mobile-cta-fixed" id="mobileCta">
-        <a href="tel:+351913560194" data-pt="📞 Ligar" data-en="📞 Call">📞 Ligar</a>
-        <a href="#contact" data-pt="📅 Reservar" data-en="📅 Book">📅 Reservar</a>
-    </div>
 
     <div class="back-to-top" id="backTop">↑</div>
 
